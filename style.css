@@ -42,6 +42,12 @@ body{
     display: flex;
     align-items: center;
     z-index: 100;
+    transition: .5s;
+}
+
+.header.sticky {
+    background: var(--bg-color);
+    box-shadow: 0 .1rem 1rem var(--shadow-color);
 }
 
 .logo{
@@ -58,6 +64,13 @@ body{
     color: var(--white-color);
     font-weight: 500;
     margin-right: 2.5rem;
+}
+.header.sticky .navbar a{
+    color: var(--text-color);
+}
+
+.header.sticky .navbar a.active{
+    color: var(--main-color);
 }
 
 .navbar a.active::before{
@@ -231,10 +244,81 @@ section{
 
 }
 
-.about-img img{
-    position: absolute;
-    bottom: auto;
-    width: 22%;
-    top:130%;
 
+span{
+    color: var(--main-color);
+}
+
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding: 50px;
+    flex-wrap: wrap;
+
+}
+
+.about-img img {
+    width: 400px;
+    height: 400px;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.floating-img {
+    animation: float 3s ease-in-out infinite;
+    position: relative;
+}
+
+/* Optional: Add a subtle shadow animation to enhance the effect */
+@keyframes shadow {
+    0% {
+        filter: drop-shadow(0 10px 8px rgba(0, 0, 0, 0.1));
+    }
+    50% {
+        filter: drop-shadow(0 20px 12px rgba(0, 0, 0, 0.15));
+    }
+    100% {
+        filter: drop-shadow(0 10px 8px rgba(0, 0, 0, 0.1));
+    }
+}
+
+.floating-img img {
+    animation: shadow 3s ease-in-out infinite;
+}
+
+.about-content {
+    flex: 1;
+    min-width: 300px;
+    max-width: 600px;
+}
+
+.about-content h2 {
+    font-size: 4rem;
+    line-height: 1.2;
+    margin-bottom: 0.5rem;
+
+}
+
+.about-content h3 {
+    font-size: 2rem;
+    line-height: 1.1;
+    margin-bottom: 2.0rem;
+}
+
+.about-content p {
+    font-size: 1.6rem;
+    margin-bottom: 2rem;
+    line-height: 1.6;
 }
