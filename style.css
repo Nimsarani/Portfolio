@@ -223,17 +223,18 @@ section{
 
 .home-img img{
     position: absolute;
-    bottom: 0;
-    right: 0%;
-    width: 42%;
+    bottom: 28%;
+    right: 10%;
+    width: 310px;
     pointer-events: none;
-    height: 106%;
+    height: 310px;
 
 }
 
 .about-img img{
     position: absolute;
     bottom: auto;
-    width: 52%;
+    width: 22%;
+    top:130%;
 
 }
