@@ -16,7 +16,7 @@
 :root{
     --bg-color: #fdfdfd;
     --text-color: #333;
-    --main-color: #123c8f;
+    --main-color:#183B4E;
     --white-color: #fdfdfd;
     --shadow-color: rgba(0,0,0, .2);
 }
@@ -349,14 +349,14 @@ span{
 }
 
 .skills-content h2 {
-    font-size: 4rem;
+    font-size: 3rem;
     margin-bottom: 5rem;
     text-align: center;
-    color: var(--white-color);
+    color: var(--bg-color);
 }
 
 .skills-content h2 span {
-    color: var(--white-color);
+    color: #0ef;
     text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
 }
 
@@ -383,7 +383,7 @@ span{
 
 .skills-category:hover {
     transform: translateY(-10px);
-    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3);
+    box-shadow: 0 1rem 2rem #0ef;
 }
 
 .skills-category h3 {
