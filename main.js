@@ -14,3 +14,10 @@ ScrollReveal().reveal('.home-content,.heading ,.portfolio-box2', { origin: 'top'
 ScrollReveal().reveal('.services-container ,.about-content, .contact form ,.portfolio-box5', { origin: 'bottom' });
 ScrollReveal().reveal('.portfolio-box1,.portfolio-box4', { origin: 'left' });
 ScrollReveal().reveal('.portfolio-box3,.portfolio-box6', { origin: 'right' });
+
+ScrollReveal().reveal('.project-box', { 
+    origin: 'bottom', 
+    distance: '60px', 
+    duration: 1000, 
+    interval: 200 
+});
